@@ -21,10 +21,10 @@ Person.prototype.jobGreet = function() {
 };
 
 const p = Person("Adarsh", 22);
-const e = Employee("Swapnil", 23, "Businessman");
+// const e = Employee("Swapnil", 23, "Businessman");
 
 p.greet();
-e.jobGreet();
+p.jobGreet();
 
 
 // Do not change code below this line
