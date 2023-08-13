@@ -20,8 +20,11 @@ Person.prototype.jobGreet = function() {
   console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 };
 
-Person(Adarsh, 22);
-Employee("Photographer");
+const p = Person("Adarsh", 22);
+const e = Employee("Swapnil", 23, "Businessman");
+
+p.greet();
+e.jobGreet();
 
 
 // Do not change code below this line
