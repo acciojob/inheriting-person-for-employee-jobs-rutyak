@@ -12,12 +12,15 @@ function Employee(name, age, jobTitle) {
   this.jobTitle = jobTitle;
 }
 
-Employee.prototype = Object.create(Person.prototype);
-Employee.prototype.constructor = Employee;
+// this establish prototype inheritance
+Employee.prototype = Object.create(Person.prototype); // this will create new object that inherited from person prototype
+Employee.prototype.constructor = Employee; //  pointing to  emplyee constructor function
 
-Employee.prototype.jobGreet = function() {
+Person.prototype.jobGreet = function() {
   console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 };
+
+
 
 // Do not change code below this line
 window.Person = Person;
